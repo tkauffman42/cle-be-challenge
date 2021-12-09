@@ -11,7 +11,7 @@
   "dependencies": {
     "prettier": "^2.4.1",
     "trim-newlines": "^4.0.1",
-    "ts": "^0.2.2"
+    "ts": "^0.0.0"
   },
   "devDependencies": {
     "@vercel/node": "^1.12.1",
