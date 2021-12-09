@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "prettier": "^2.4.1",
+    "trim-newlines": "^4.0.1",
     "ts": "^0.2.2"
   },
   "devDependencies": {
