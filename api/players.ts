@@ -20,6 +20,6 @@ module.exports = (req, res) => {
             res.status(200).json({players:playerBios});
         }
     } catch (error) {
-        res.send(error)
+        res.json({message: "please enter a valid playerId"});
     }
  }
