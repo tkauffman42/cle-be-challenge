@@ -1,5 +1,5 @@
 import { VercelRequest, VercelResponse } from "@vercel/node";
-import { pitches } from "../data/Pitches"
+import { pitches } from "../data/pitches"
 
 
 module.exports = (req, res) => {

@@ -1,6 +1,6 @@
 import { VercelRequest, VercelResponse } from "@vercel/node";
-import { playerOverviews } from "../data/PlayerOverviews";
-import { playerDetails} from "../data/PlayerDetails";
+import { playerBios } from "../data/playerBios";
+import { playerStats} from "../data/playerStats";
 
 module.exports = (req, res) => {
 
@@ -8,14 +8,16 @@ module.exports = (req, res) => {
     
     try {
         if(playerId){
-            for(let i =0; i < playerDetails.length; i++){
-                if(playerDetails[i].playerId === playerId){
-                    return res.json({playerDetail: playerDetails[i]});
-                }
+            const playerData = playerStats.filter(p => p.playerId === playerId);
+            const playerBio = playerBios.filter(p => p.playerId === playerId);
+            const allPlayerData = { ...playerBio[0], ...playerStats[0]}
+            if(playerData.length < 1){
+                return res.json({message: "please enter a valid playerId"});
             }
-            return res.json({message: "incorrect playerId"});
+            return res.status(200).json({playerDetail: allPlayerData});
+            
         }else{
-            res.status(200).json({players:playerOverviews});
+            res.status(200).json({players:playerBios});
         }
     } catch (error) {
         res.send(error)

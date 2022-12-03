@@ -9,14 +9,14 @@ export type PitchDTO = {
   pitchColor: string;
   x: number;
   y: number;
-  velo: number;
+  velo: number | null;
   balls: number;
   strikes: number;
   swing: number;
   miss: number;
   inStrikeZone: number;
-  cut: number;
-  rise: number;
+  cut: number | null;
+  rise: number | null;
   batterId: number;
   batterShortName: string;
   batterName: string;
@@ -25,7 +25,7 @@ export type PitchDTO = {
   batApproachGroup: string;
 };
 
-export type PlayerOverviewDTO = {
+export type PlayerBioDTO = {
   fullName: string;
   shortName: string;
   position: string;
@@ -36,18 +36,8 @@ export type PlayerOverviewDTO = {
   teamAbbr: string;
 };
 
-export type PlayerDetailDTO = {
-  fullName: string;
-  shortName: string;
-  position: string;
+export type PlayerStatsDTO = {
   playerId: number;
-  imgId: number;
-  ageDecimal: number;
-  bats: string;
-  throws: string;
-  orgId: number;
-  orgAbbr: string;
-  teamAbbr: string;
   serviceTime: number;
   g: number;
   gs: number;
@@ -66,4 +56,53 @@ export type PlayerDetailDTO = {
   walkRate: number;
   kRate: number;
   gbRate: number;
+};
+
+/* 
+ This type is a combination of fields found in PlayerBioDTO
+ and PlayerStatsDTO. The PlayerDetailDTO should contain the 
+ following fields:
+  - playerId
+  - fullName
+  - shortName
+  - position
+  - imgId
+  - orgId
+  - orgAbbr
+  - teamAbbr
+  - serviceTime
+  - g
+  - gs
+  - ip
+  - h
+  - hr
+  - bb
+  - k
+  - np
+  - era
+  - fip
+*/
+
+// IMPLEMENT ME!
+export type PlayerDetailDTO = {
+  playerId: number;
+  fullName: string;
+  shortName: string;
+  position: string;
+  imgId: number;
+  ageDevimal: number;
+  orgId: number;
+  orgAbbr: string;
+  teamAbbr: string;
+  serviceTime: number;
+  g: number;
+  gs: number;
+  ip: number;
+  h: number;
+  hr: number;
+  bb: number;
+  k: number;
+  np: number;
+  era: number;
+  fip: number;
 };

@@ -1,6 +1,6 @@
-import { PlayerOverviewDTO } from "../types/dtos";
+import { PlayerBioDTO } from "../types/dtos";
 
-export const playerOverviews: PlayerOverviewDTO[] = [
+export const playerBios: PlayerBioDTO[] = [
   {
     fullName: "Garza, Justin",
     shortName: "Garza J.",
@@ -9,7 +9,7 @@ export const playerOverviews: PlayerOverviewDTO[] = [
     imgId: 621057,
     orgId: 1,
     orgAbbr: "CLE",
-    teamAbbr: "CLE",
+    teamAbbr: "CLE"
   },
   {
     fullName: "Quantrill, Cal",
@@ -19,7 +19,7 @@ export const playerOverviews: PlayerOverviewDTO[] = [
     imgId: 615698,
     orgId: 1,
     orgAbbr: "CLE",
-    teamAbbr: "CLE",
+    teamAbbr: "CLE"
   },
   {
     fullName: "Young, Alex",
@@ -29,7 +29,7 @@ export const playerOverviews: PlayerOverviewDTO[] = [
     imgId: 622065,
     orgId: 1,
     orgAbbr: "CLE",
-    teamAbbr: "CLE",
+    teamAbbr: "CLE"
   },
   {
     fullName: "Hentges, Sam",
@@ -39,7 +39,7 @@ export const playerOverviews: PlayerOverviewDTO[] = [
     imgId: 656529,
     orgId: 1,
     orgAbbr: "CLE",
-    teamAbbr: "CLE",
+    teamAbbr: "CLE"
   },
   {
     fullName: "Allen, Logan",
@@ -49,7 +49,7 @@ export const playerOverviews: PlayerOverviewDTO[] = [
     imgId: 663531,
     orgId: 1,
     orgAbbr: "CLE",
-    teamAbbr: "CLE",
+    teamAbbr: "CLE"
   },
   {
     fullName: "Clase, Emmanuel",
@@ -59,7 +59,7 @@ export const playerOverviews: PlayerOverviewDTO[] = [
     imgId: 661403,
     orgId: 1,
     orgAbbr: "CLE",
-    teamAbbr: "CLE",
+    teamAbbr: "CLE"
   },
   {
     fullName: "Mckenzie, Triston",
@@ -69,7 +69,7 @@ export const playerOverviews: PlayerOverviewDTO[] = [
     imgId: 663474,
     orgId: 1,
     orgAbbr: "CLE",
-    teamAbbr: "CLE",
+    teamAbbr: "CLE"
   },
   {
     fullName: "Stephan, Trevor",
@@ -79,7 +79,7 @@ export const playerOverviews: PlayerOverviewDTO[] = [
     imgId: 663986,
     orgId: 1,
     orgAbbr: "CLE",
-    teamAbbr: "CLE",
+    teamAbbr: "CLE"
   },
   {
     fullName: "Morgan, Eli",
@@ -89,7 +89,7 @@ export const playerOverviews: PlayerOverviewDTO[] = [
     imgId: 669212,
     orgId: 1,
     orgAbbr: "CLE",
-    teamAbbr: "CLE",
+    teamAbbr: "CLE"
   },
   {
     fullName: "Civale, Aaron",
@@ -99,7 +99,7 @@ export const playerOverviews: PlayerOverviewDTO[] = [
     imgId: 650644,
     orgId: 1,
     orgAbbr: "CLE",
-    teamAbbr: "CLE",
+    teamAbbr: "CLE"
   },
   {
     fullName: "Bieber, Shane",
@@ -109,7 +109,7 @@ export const playerOverviews: PlayerOverviewDTO[] = [
     imgId: 669456,
     orgId: 1,
     orgAbbr: "CLE",
-    teamAbbr: "CLE",
+    teamAbbr: "CLE"
   },
   {
     fullName: "Nelson, Kyle",
@@ -119,7 +119,7 @@ export const playerOverviews: PlayerOverviewDTO[] = [
     imgId: 669459,
     orgId: 1,
     orgAbbr: "CLE",
-    teamAbbr: "CLE",
+    teamAbbr: "CLE"
   },
   {
     fullName: "Karinchak, James",
@@ -129,7 +129,7 @@ export const playerOverviews: PlayerOverviewDTO[] = [
     imgId: 675916,
     orgId: 1,
     orgAbbr: "CLE",
-    teamAbbr: "CLE",
+    teamAbbr: "CLE"
   },
   {
     fullName: "Sandlin, Nick",
@@ -139,6 +139,6 @@ export const playerOverviews: PlayerOverviewDTO[] = [
     imgId: 680704,
     orgId: 1,
     orgAbbr: "CLE",
-    teamAbbr: "CLE",
-  },
+    teamAbbr: "CLE"
+  }
 ];
