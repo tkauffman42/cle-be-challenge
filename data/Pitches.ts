@@ -1,4 +1,5 @@
 import { PitchDTO } from "../types/dtos";
+
 export const pitches: PitchDTO[] = [
   {
     pitcherId: 123944,
