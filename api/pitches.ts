@@ -16,6 +16,6 @@ module.exports = (req, res) => {
             return res.json({message: "A playerId is required"});
         }
     } catch (error) {
-        res.json({message: "A playerId is required"});
+        res.json({message: "please enter a valid playerId"});
     }
  }
