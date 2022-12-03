@@ -13,9 +13,9 @@ module.exports = (req, res) => {
             }
             return res.status(200).json({pitches: pitchData});
         }else{
-            return res.json({message: "A playerId is required"})
+            return res.json({message: "A playerId is required"});
         }
     } catch (error) {
-        res.send(error);
+        res.json({message: "A playerId is required"});
     }
  }
